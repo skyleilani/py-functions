@@ -17,7 +17,8 @@ def is_binary_equal(binary):
     return one_count, zero_count
 
 # tests 
-print(is_binary_equal('100101') # true 
-print(is_binary_equal('1010101') # (4, 3) 
-print(is_binary_equal('010101') # true 
-print(is_binary_equal('110101') # (4, 2)
+print(is_binary_equal('100101')) # true 
+print(is_binary_equal('1010101')) # (4, 3) 
+print(is_binary_equal('010101')) # true 
+print(is_binary_equal('110101')) # (4, 2)
+print(is_binary_equal(010101)) # Error
