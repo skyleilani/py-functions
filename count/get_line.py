@@ -7,7 +7,7 @@ def get_line(filename, line_number):
     lines = f.readlines()
     # Check if the specified line number is out of range
     if line_number > len(lines):
-      # Print an error message if the line number is out of range
+      # Print a error message if the line number is out of range
       print(f'Error: Line number {line_number} does not exist')
       return
     # Return the length of the specified line
