@@ -1,9 +1,23 @@
-# is_binary_equal will return true if there are an equal amount of 1's to 0's, and false if there is an unequal amount
+# is_binary_equal 
+# @param - takes a binary number  return true if there are an equal amount of ones to zeros
+# returns (ones_count, zeros_count) if there is an unequal amount
 def is_binary_equal(binary):
-  return binary.count('1')  == binary.count('0')
+  
+  # handle nonstring input error
+  if type(binary) != str: 
+    print('Error: Binary must be in string format')
+    return
+  
+  ones_count = binary.count('1')
+  zeros_count = binary.count('0') 
+  
+  if ones_count == zeros_count:
+    return True
+  else: 
+    return one_count, zero_count
 
 # tests 
 print(is_binary_equal('100101') # true 
-print(is_binary_equal('1010101') # false 
+print(is_binary_equal('1010101') # (4, 3) 
 print(is_binary_equal('010101') # true 
-print(is_binary_equal('110101') # false
+print(is_binary_equal('110101') # (4, 2)
