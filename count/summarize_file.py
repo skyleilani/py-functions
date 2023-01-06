@@ -1,4 +1,4 @@
-# summarize_file takes a file to summarize and returns the total number of characters and lines in a file. 
+# summarize_file takes a file to summarize and returns the total number of characters and lines in a file
 
 def summarize_file(filename):
   
