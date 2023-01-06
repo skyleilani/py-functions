@@ -1,6 +1,8 @@
 # is_binary_equal 
-# @param - takes a binary number  return true if there are an equal amount of ones to zeros
-# returns (ones_count, zeros_count) if there is an unequal amount
+# @param - takes a binary number  
+# @returns - 
+# True if there are an equal amount of ones to zeros
+# False and the ones and zeros count if there is an unequal amount
 def is_binary_equal(binary):
   
   # handle nonstring input error
@@ -14,7 +16,7 @@ def is_binary_equal(binary):
   if ones_count == zeros_count:
     return True
   else: 
-    return one_count, zero_count
+    return false, one_count, zero_count
 
 # tests 
 print(is_binary_equal('100101')) # true 
