@@ -1,6 +1,6 @@
-# This isn't good for actual encryption and it's very easy to crack so please don't try to use it in your actual code!
+# This isn't strong, very easy to crack so please don't try to use it in your actual code!
 # Just for basic algorithm implementation practice that's all 
-# You can use AES (Advanced Encryption Standard)for a more secure situationn 
+
 
 # returns an encrypted version of the string input 
 def ascii_encrypt(s: str) -> str:
