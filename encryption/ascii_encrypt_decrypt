@@ -1,0 +1,24 @@
+# This isn't good for actual encryption and it's very easy to crack so please don't try to use it in your actual code!
+# Just for basic algorithm implementation practice that's all 
+# You can use AES (Advanced Encryption Standard)for a more secure situationn 
+
+# returns an encrypted version of the string input 
+def ascii_encrypt(s: str) -> str:
+    encrypted = ''
+    
+    # iterate over the characters and their index in input string
+    for i, c in enumerate(s):
+        # shift the charcode of each character by its index in the string
+        # add the resulting character to the encrypted string
+        encrypted += chr(ord(c) + i)
+   
+    return encrypted
+
+# returns the decrypted version of the string input
+def ascii_decrypt(s: str) -> str:
+    decrypted = ''
+
+    for i, c in enumerate(s):
+        # shift the charcode of each character by its index in the string (in the opposite direction)
+        decrypted += chr(ord(c) - i)
+    return decrypted
